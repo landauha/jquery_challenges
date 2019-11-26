@@ -10,25 +10,6 @@
 		display:none; }
 		</style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-		<script>
-		$(document).ready(function(){
-			$("#submit").click(function(){
-				if ($("#fullname").val()==""){
-					$("#nameerrormsg").toggle();
-					return false;
-				}
-				if ($("#streetaddr").val()==""){
-					$("#addrerrormsg").toggle();
-					return false;
-				}
-				else{
-					return true;
-				}
-			});
-		});
-		</script>
-
 	</head>
 	<body>
 		<h1>Challenge 4</h1>
@@ -48,6 +29,8 @@
 			</fieldset>
 			<input type="submit" value="Submit it!" id="submit">
 		</form>
+
+		<script src = "jquery/jquery-challenge4.js"></script>
 
 	</body>
 	</html>

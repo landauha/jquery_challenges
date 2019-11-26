@@ -36,26 +36,6 @@
 	}
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script>
-	$(document).ready(function() {
-		$(".preview").hover(function() {
-			var img_source = $(this).attr('src');
-			var bg_img = "background-image: url('" + img_source + "')";
-			$('#image').attr("style", bg_img);
-			$('#image').text($(this).attr('alt'));
-		}, function() {
-			$('#image').css("background-image", "none");
-			$('#image').text("Hover/tab over an image below.")
-		});
-	$(".preview").focus(function() {
-			var img_source = $(this).attr('src');
-			var bg_img = "background-image: url('" + img_source + "')";
-			$('#image').attr("style", bg_img);
-			$('#image').text($(this).attr('alt'));
-		});
-	});
-	</script>
-
 </head>
 <body>
 	<h1>Challenge 5</h1>
@@ -92,6 +72,8 @@
 	tabindex = "0"
 	alt = "Shades of Purple"
 	src = "images/purple.png">
+
+	<script src = "jquery/jquery-challenge5.js"></script>
 
 </body>
 </html>

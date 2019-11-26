@@ -26,82 +26,6 @@
 	}
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script>
-	$(document).ready(function(){
-	// 	var standing == false
-	// 	var fruit == false
-	//
-	// 	$("#ch3form").click(function(){
-	// 		if (($("#freshman").is(":checked")) ||
-	// 				($("#soph").is(":checked")) ||
-	// 				($("#jr").is(":checked")) ||
-	// 				($("#sr").is(":checked")) ||
-	// 				($("#grad").is(":checked")) ||
-	// 				($("#other").is(":checked"))) {
-	// 			standing == true
-	// 		}
-	// 		else {
-	// 			alert("You must pick a class standing!")
-	// 			standing == false
-	// 		}
-	//
-	// 		$("#ch3form").click(function() {
-	// 			if (($("#kum").is(":checked")) ||
-	// 					($("#figs").is(":checked")) ||
-	// 					($("#straw").is(":checked")) ||
-	// 					($("#blue").is(":checked")) ||
-	// 					($("#grsad").is(":checked")) ||
-	// 					($("#other").is(":checked"))) {
-	// 				fruit == true
-	// 			}
-	// 			else {
-	// 				alert("You must pick a fruit!")
-	// 				fruit == false
-	// 			}
-	// 		});
-	//
-	// 		if ((standing==true) && (fruit==true)) {
-	// 			return true
-	// 		}
-	// 		else {
-	// 			return false
-	// 		}
-	// 	});
-	// });
-
-			// console.log('checking for submit')
-			var standing = $('input[name="standing"]')
-			var fruit = $('input[name="fruit"]')
-
-			// console.log(standing);
-			standing.each(function() {
-				// console.log('checking for checked standing');
-				if (this.checked) {
-					// console.log('checked');
-					return true;
-				}
-				alert("You must pick a class standing!");
-				return false;
-			})
-
-			// console.log(fruit);
-			fruit.each(function() {
-				// console.log('checking for checked fruit');
-				if (this.checked) {
-					// console.log('checked');
-					return true;
-				}
-				alert("You must pick a fruit!");
-				return false;
-			})
-
-			$("#ch3form").click(function(){
-				
-			})
-
-		})
-
-	</script>
 </head>
 <body>
 	<h1> Challenge 3</h1>
@@ -153,5 +77,8 @@
 		</fieldset>
 		<input type="submit" value="Let us know" onsubmit="return validate()">
 	</form>
+
+	<script src = "jquery/jquery-challenge3.js"></script>
+
 </body>
 </html>
